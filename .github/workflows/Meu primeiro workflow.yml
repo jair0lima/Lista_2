@@ -5,8 +5,18 @@ on: workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: Primeiro job executado
+
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: Segundo job executado
+        
+  last-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: Ultimo job executado
