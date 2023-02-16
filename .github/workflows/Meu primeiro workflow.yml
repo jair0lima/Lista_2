@@ -7,16 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: Primeiro job executado
+        run: echo Primeiro job executado
 
   second-job:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: Segundo job executado
+        run: echo Segundo job executado
         
   last-job:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: Ultimo job executado
+        run: echo Ultimo job executado
