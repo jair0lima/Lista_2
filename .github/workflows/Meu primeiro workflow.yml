@@ -10,12 +10,14 @@ jobs:
         run: echo Primeiro job executado
 
   second-job:
+    needs: [first-job]
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
         run: echo Segundo job executado
         
   last-job:
+    needs: [second-job]
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
